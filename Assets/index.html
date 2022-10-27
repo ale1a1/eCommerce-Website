@@ -20,13 +20,9 @@
     <title>eCommerce</title>
   </head>
   <body>
-    <!--todo: MAIN -->
     <main>
-      <!--TODO: MAIN > HEADER -->
       <header>
-        <!-- todo: Top Info bar -->
-
-        <div class="container text-light p-2 bg-purple-dark-20">
+        <div class="text-light p-2 bg-purple-dark-20">
           <div class="container-fluid row text-wrap">
             <div class="col col-xxl-2 d-flex flex-row">
               <i class="bi bi-headset text-carrot-red pe-1"></i>
@@ -37,18 +33,187 @@
                 >(00)331254566151</a
               >
             </div>
+            <div
+              id="info-top-carousel"
+              class="col col-xxl-6 col-md-12 carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner text-carrot-red">
+                <div class="carousel-item active">
+                  <span>Get instant and lifetime access to you course!</span>
+                </div>
+                <div class="carousel-item">
+                  <span>Money back within 30 days.</span>
+                </div>
+                <div class="carousel-item">
+                  <span>Friendly 24/7 customer support.</span>
+                </div>
+                <div class="carousel-item">
+                  <span>We possess SSL / Secure certificate</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xxl-4 col-sm-12 text-end align-items-center">
+              <div class="btn-group dropdown disable-autohide">
+                <button
+                  class="btn btn-sm dropdown-toggle px-2 text-light"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-flag-fill me-2"></i> Eng / $
+                </button>
+                <ul class="dropdown-menu my-1">
+                  <li class="dropdown-item">
+                    <select class="form-select form-select-sm">
+                      <option value="usd">$ USD</option>
+                      <option value="eur">€ EUR</option>
+                      <option value="ukp">£ UKP</option>
+                      <option value="jpy">¥ JPY</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="position-relative p-1"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#Cart"
+                aria-controls="Cart"
+              >
+                <i class="bi bi-cart bg-light text-dark rounded-circle p-1">
+                </i>
+                <span
+                  class="badge position-absolute top-0 start-100 translate-middle rounded-pill bg-danger"
+                  >+2</span
+                >
+              </a>
+              <div id="Cart" class="offcanvas offcanvas-end">
+                <div class="offcanvas-header bg-purple-dark">
+                  <h5 class="text-light">CART</h5>
+                  <button
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                  ></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <div class="row mb-5">
+                    <div class="col mb-3">
+                      <div
+                        class="d-flex mb-3 text-purple-dark justify-content-between"
+                      >
+                        <h4>Subtotal</h4>
+                        <h4>$ 41.98</h4>
+                      </div>
+                      <form>
+                        <div class="d-flex justify-content-between">
+                          <input
+                            type="text"
+                            class="form-controle"
+                            placeholder="Promo code "
+                            required
+                          />
+                          <button type="submit" class="btn btn-outline-danger">
+                            Apply promo code
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <button class="btn btn-danger m-auto shadow w-100">
+                      <i class="bi bi-credit-card me-2"> </i>Proceed to checkout
+                    </button>
+                  </div>
+
+                  <div class="row">
+                    <div class="card border-0 mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../Assets/img/img_course/30 Day of Projects Logo-V3.jpg"
+                            alt=""
+                            class="img-fluid rounded-start"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body text-purple-dark pt-sm-0">
+                            <h6 class="card-title">
+                              30 HTML5 CSS3 & JavaScript Projects
+                            </h6>
+                            <div class="row">
+                              <p class="col-4 text-primary">$15.99</p>
+                              <input
+                                type="number"
+                                class="col-4 h-50"
+                                placeholder="1"
+                                min="0"
+                              />
+                              <a
+                                href="#"
+                                class="col-4 text-danger"
+                                data-bs-toggle="tooltip"
+                                title="Remove"
+                              >
+                                <i class="bi bi-x-circle m-auto"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card border-0 mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../Assets/img/img_course/Modern JavaScript and NodeJS Course.jpg"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body text-purple-dark pt-sm-0">
+                            <h6 class="card-title">
+                              Modern JavaScript and NodeJS
+                            </h6>
+                            <div class="row">
+                              <p class="col-4 text-primary">$25.99</p>
+
+                              <input
+                                type="number"
+                                class="col-4 h-50"
+                                placeholder="1"
+                                min="0"
+                              />
+                              <a
+                                href="#"
+                                class="col-4 text-danger"
+                                data-bs-toggle="tooltip"
+                                title="Remove"
+                                ><i class="bi bi-x-circle"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
-      <!--TODO: MAIN > SEC. CATEGORIES -->
-      <!--TODO: MAIN > SEC. PRODUCT GALLERY -->
-      <!--TODO: MAIN > SEC. REVIEWS -->
-      <!--TODO: MAIN > SEC. COLLABORATE -->
     </main>
-
-    <!--TODO: FOOTER  -->
-
-    <!-- script -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
