@@ -392,7 +392,154 @@
           </div>
         </section>
       </header>
+      <section id="Categories" class="container py-5">
+        <h4 class="display-4 fw-bold text-purple-dark my-5 pb-2">
+          Top categories & technologies
+        </h4>
+        <h6 class="display-6 text-purple-dark mb-3">
+          Web development / Front-End / Back-End / Full Stack
+        </h6>
+        <p class="fs-4 mb-5">Choose from the hottest industry requirements</p>
+        <!-- Technology container -->
 
+        <div class="container px-0">
+          <div class="row row-cols-1 row-cols-md-2 mt-5 justify-content-around">
+            <div
+              class="col category display-1 row"
+              data-bs-toggle="popover"
+              data-bs-trigger=" hover"
+              title="Web development"
+              data-bs-content="Front-End Frameworks"
+            >
+              <i
+                class="fab fa-angular text-angular col-6"
+                data-bs-toggle="tooltip"
+                title="Angular"
+              >
+              </i
+              ><i
+                class="fab fa-vuejs text-vue col-6"
+                data-bs-toggle="tooltip"
+                title="VueJS"
+              ></i
+              ><i
+                class="fab fa-react text-react col-auto"
+                data-bs-toggle="tooltip"
+                title="React"
+              ></i>
+            </div>
+            <div
+              class="col category display-2 row"
+              data-bs-toggle="popover"
+              data-bs-trigger=" hover"
+              title="Frontend languages"
+              data-bs-content="HTML, CSS, JavaScript, Sass/Scss, CSS-Framework"
+            >
+              <i
+                class="fab fa-html5 text-html col-4"
+                data-bs-toggle="tooltip"
+                title="HTML"
+              ></i
+              ><i
+                class="fab fa-css3-alt text-css col-4"
+                data-bs-toggle="tooltip"
+                title="CSS"
+              ></i
+              ><i
+                class="fab fa-js text-js col-4"
+                data-bs-toggle="tooltip"
+                title="JavaScript"
+              ></i
+              ><i
+                class="fab fa-sass text-sass col-4"
+                data-bs-toggle="tooltip"
+                title="Sass"
+              ></i>
+              <i
+                class="fab fa-bootstrap text-bs col-4"
+                data-bs-toggle="tooltip"
+                title="Bootstrap"
+              ></i>
+            </div>
+            <div
+              class="col category display-1 row"
+              data-bs-toggle="popover"
+              data-bs-trigger=" hover"
+              title="Backend languages & technologies"
+              data-bs-content="npm, NodeJS, Express, MongoDB, Sql"
+            >
+              <i
+                class="fab fa-npm text-npm col-6"
+                data-bs-toggle="tooltip"
+                title="mpn"
+              ></i
+              ><i
+                class="fab fa-node text-node col-6"
+                data-bs-toggle="tooltip"
+                title="NodeJS"
+              ></i
+              ><i
+                class="fas fa-database text-db col-auto"
+                data-bs-toggle="tooltip"
+                title="Data base"
+              ></i>
+            </div>
+            <div
+              class="col category display-4 row"
+              data-bs-toggle="popover"
+              data-bs-trigger=" hover"
+              title="Fullstack"
+              data-bs-content="MongoDB - document database 
+              Express(.js) - Node.js web framework
+              React(.js) - a client-side JavaScript framework 
+              Node(.js) - the premier JavaScript web server"
+            >
+              <div class="col">
+                <h4 class="text-center mb-3">MERN</h4>
+                <div class="row border-1">
+                  <i
+                    class="fas fa-database text-db col-6"
+                    data-bs-toggle="tooltip"
+                    title="MongoDB"
+                  ></i>
+                  <div class="fs-6 col-6 text-primary">ExpressJS</div>
+                  <i
+                    class="fab fa-react text-react col-6"
+                    data-bs-toggle="tooltip"
+                    title="React"
+                  ></i
+                  ><i
+                    class="fab fa-node text-node col-6"
+                    data-bs-toggle="tooltip"
+                    title="NodeJS"
+                  ></i>
+                </div>
+              </div>
+              <div class="col">
+                <h4 class="text-center mb-3">MEAN</h4>
+                <div class="row">
+                  <i
+                    class="fas fa-database text-db col-6"
+                    data-bs-toggle="tooltip"
+                    title="MongoDB"
+                  ></i>
+                  <div class="fs-6 col-6 text-primary">ExpressJS</div>
+                  <i
+                    class="fab fa-angular text-angular col-6"
+                    data-bs-toggle="tooltip"
+                    title="Angular"
+                  ></i
+                  ><i
+                    class="fab fa-node text-node col-6"
+                    data-bs-toggle="tooltip"
+                    title="NodeJS"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--TODO: MAIN > SEC. CATEGORIES -->
       <!--TODO: MAIN > SEC. PRODUCT GALLERY -->
       <!--TODO: MAIN > SEC. REVIEWS -->
@@ -412,5 +559,13 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
   </body>
 </html>
