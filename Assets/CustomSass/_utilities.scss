@@ -91,3 +91,12 @@
 .fade-in-left {
   animation: animateFadeInLeft 2s ease;
 }
+
+// Avatar
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: $light;
+  border-radius: 50%;
+}
