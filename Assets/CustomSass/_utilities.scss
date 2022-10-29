@@ -100,3 +100,17 @@
   background: $light;
   border-radius: 50%;
 }
+
+// Button
+
+.btn {
+  &-purple {
+    @extend .btn;
+    background-color: $purple-dark;
+    color: $light;
+    &:hover {
+      @extend .btn-danger;
+      @extend .shadow;
+    }
+  }
+}
