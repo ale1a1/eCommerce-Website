@@ -113,4 +113,12 @@
       @extend .shadow;
     }
   }
+  &-social {
+    @extend .btn;
+    @extend .bg-purple-dark-20;
+    &:hover {
+      @extend .btn-outline-light;
+      color: $carrot-red !important;
+    }
+  }
 }
